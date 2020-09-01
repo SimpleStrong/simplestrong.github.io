@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
       <head>
-        <title>SimpleStrong</title>
         <link rel="stylesheet" href="mainCSS">
     </head>
   <body>
