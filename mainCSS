@@ -1,0 +1,7 @@
+h1 {
+    font-size: 10em;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+    color: white;
+    margin: 0.1em;
+}
