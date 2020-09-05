@@ -13,41 +13,41 @@ h1 {
     font-size: 10em;
     font-variant-caps: all-small-caps;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
     margin: 0.1em;
 }
 
 h2 {
     font-size: 5em;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     margin: 0;
 }
 
 h3 {
     font-size: 3em;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     margin: 0;
 }
 
 h4 {
     font-size: 2em;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     margin: 0;
 }
 
 h5 {
     font-size: 1.3em;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     margin: 0;
 }
 
 h6 {
     font-size: 0.9em;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     margin: 0;
 }
@@ -55,8 +55,8 @@ h6 {
 .navbutton{
     width: 200px;
     height:0px;
-    background-color: white;
-    color: white;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
     transition-duration: 0.3s;
     font-variant-caps: all-small-caps;
     font-size: 2em;
@@ -70,7 +70,7 @@ h6 {
     width: 200px;
     height:100px;
     text-align: center;
-    color:black;
+    color:#000000;
 }
 
 .flex-container{
@@ -90,5 +90,5 @@ h6 {
 
 .maintext {
     font-size: 1.5em;
-    color: white;
+    color: #FFFFFF;
 }
