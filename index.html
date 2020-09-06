@@ -2,46 +2,49 @@
 <html>
     <head>
         <title>SimpleStrong</title>
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header>
-            <div class="flex-container">
-                <a href="index.html" class="navbutton">
-                    <p>Home</p>
-                </a>
-                <a href="personal.html" class="navbutton">
-                    <p>portfolio</p>
-                </a>
-                <a href="about.html" class="navbutton">
-                    <p>About</p>
-                </a>
-                <a href="videotest.html" class="navbutton">
-                    <p>No u</p>
-                </a>
-            </div>
+        <header id="sticky">
+            <a id="simpleStrong" style="font-size: 2.5rem; cursor:pointer; padding: 0rem 1rem 0rem 1rem;" id="sidebarOpen" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
         </header>
+        <div id="branding">
+            <h1 id="elegantSimple">elegance in simplicity</h1>
+        </div>
         <div class="page">
-            <h1>elegance in simplicity</h1>
-            <h3>SIMPLESTRONG</h3>
             <div class="container">
                 <div>
                     <div class="imageContainer">
-                        <img class="image" src="/media/imgs/Mustang.jpg">
+                        <img class="image" src="Mustang.jpg">
                     </div>
                     <h4 class="bottomText">ADVA Meet Videos</h4>
                 </div>
                 <div>
                 <div class="imageContainer">
-                    <img class="image" src="/media/imgs/KRK.jpg">
+                    <img class="image" src="KRK.jpg">
                 </div>
                 <h4 class="bottomText">ADVA promotional app</h4>
                 </div>
             </div>
         </div>
-        
+        <div id="sidebar">
+            <a style="font-size: 3rem; color: #FFFFFF; text-align: right; cursor: pointer; padding: 1rem;" onclick="SidebarClose()">&times;</a>
+            <a class="navbutton" href="index.html">HOME</a>
+            <a class="navbutton" href="portfolio.html">PORTFOLIO</a>
+            <a class="navbutton" href="videotest.html">SHOWREEL</a>
+            <a class="navbutton" href="about.html">ABOUT</a>
+        </div>
         <footer>
             <h6>For when your thingy gets real strong!</h6>
         </footer>
+        <script>
+            function SidebarOpen(){
+                document.getElementById("sidebar").style.width = "20em";
+            }
+            
+            function SidebarClose(){
+                document.getElementById("sidebar").style.width = "0";
+            }
+        </script>
     </body>
 </html>
