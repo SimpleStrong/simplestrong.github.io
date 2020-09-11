@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>SimpleStrong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-            <header id="sticky">
-            <a id="simpleStrong" style="font-size: 2.5rem; cursor:pointer; padding: 0rem 1rem 0rem 1rem;" id="sidebarOpen" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
-        </header>
-    <video autoplay muted loop id="showreel">
+    <video autoplay loop id="showreel">
         <source src="DietCoke.mp4" type="video/mp4">
     </video>
     
     <div class="content">
-        <h3>Nice Video m8</h3>
-    </div>
-            <div id="sidebar">
-            <a style="font-size: 3rem; color: #FFFFFF; text-align: right; cursor: pointer; padding: 1rem;" onclick="SidebarClose()">&times;</a>
-            <a class="navbutton" href="index.html">HOME</a>
-            <a class="navbutton" href="portfolio.html">PORTFOLIO</a>
-            <a class="navbutton" href="videotest.html">SHOWREEL</a>
-            <a class="navbutton" href="about.html">ABOUT</a>
+        <h3 style="position:absolute; top:2em;">Nice Video m8</h3>
+        <div id="sticky">
+            <a id="simpleStrong" style="font-size: 2.5rem; cursor:pointer; padding: 0.5rem 1rem 0.5rem 1rem;" id="sidebarOpen" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
         </div>
+        <div id="sidebar">
+            <a style="font-size: 3rem; color: #FFFFFF; text-align: right; cursor: pointer; padding: 1rem;" onclick="SidebarClose()">&times;</a>
+            <a class="navButton" href="index.html"><div></div><p>HOME</p></a>
+            <a class="navButton" href="portfolio.html"><div></div><p>PORTFOLIO</p></a>
+            <a class="navButton" href="videotest.html"><div></div><p>SHOWREEL</p></a>
+            <a class="navButton" href="about.html"><div></div><p>ABOUT</p></a>
+        </div>
+    </div>
     <script>
             function SidebarOpen(){
                 document.getElementById("sidebar").style.width = "20em";
