@@ -169,7 +169,7 @@ p {
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
-    padding: 0em 5em 0em 5em;
+    padding: 0em;
     height: 100vh;
 }
 
