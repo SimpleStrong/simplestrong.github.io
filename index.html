@@ -3,47 +3,64 @@
     <head>
         <title>SimpleStrong</title>
         <link rel="stylesheet" href="/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header id="sticky">
-            <a id="simpleStrong" style="font-size: 2.5rem; cursor:pointer; padding: 0rem 1rem 0rem 1rem;" id="sidebarOpen" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
-        </header>
         <div id="branding">
             <h1 id="elegantSimple">elegance in simplicity</h1>
         </div>
+        <h5 id="scrollDown">Scroll down</h5>
         <div class="page">
             <div class="container">
                 <div>
                     <div class="imageContainer">
-                        <img class="image" src="/media/imgs/Mustang.jpg">
+                        <a href="portfolio1.html">
+                            <img class="image" src="/media/imgs/Mustang.jpg">
+                        </a>
                     </div>
-                    <h4 class="bottomText">ADVA Meet Videos</h4>
+                    <h4 class="bottomText" href="portfolio1.html">ADVA Meet Videos</h4>
                 </div>
                 <div>
-                <div class="imageContainer">
-                    <img class="image" src="/media/imgs/KRK.jpg">
-                </div>
+                    <div class="imageContainer">
+                        <a>
+                            <img class="image" src="/media/imgs/KRK.jpg">
+                        </a>
+                    </div>
                 <h4 class="bottomText">ADVA promotional app</h4>
                 </div>
             </div>
         </div>
+        <div id="sticky">
+            <a id="simpleStrong" style="font-size: 2.5rem; cursor:pointer; padding: 0.5rem 1rem 0.5rem 1rem;" id="sidebarOpen" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
+        </div>
         <div id="sidebar">
-            <a style="font-size: 3rem; color: #FFFFFF; text-align: right; cursor: pointer; padding: 1rem;" onclick="SidebarClose()">&times;</a>
-            <a class="navbutton" href="index.html">HOME</a>
-            <a class="navbutton" href="portfolio.html">PORTFOLIO</a>
-            <a class="navbutton" href="videotest.html">SHOWREEL</a>
-            <a class="navbutton" href="about.html">ABOUT</a>
+            <a style="font-size: 3rem; color: #FFF; text-align: right; cursor: pointer; padding: 1rem;" onclick="SidebarClose()">&times;</a>
+            <a class="navButton" href="index.html"><div></div><p>HOME</p></a>
+            <a class="navButton" href="portfolio.html"><div></div><p>PORTFOLIO</p></a>
+            <a class="navButton" href="videotest.html"><div></div><p>SHOWREEL</p></a>
+            <a class="navButton" href="about.html"><div></div><p>ABOUT</p></a>
         </div>
         <footer>
             <h6>For when your thingy gets real strong!</h6>
         </footer>
         <script>
+            window.onscroll = OnScroll;
+            
             function SidebarOpen(){
                 document.getElementById("sidebar").style.width = "20em";
             }
             
             function SidebarClose(){
                 document.getElementById("sidebar").style.width = "0";
+            }
+            
+            function OnScroll(){
+                if (scrollY > 200){
+                    document.getElementById("scrollDown").style.color = "#5550";
+                }
+                else{
+                    document.getElementById("scrollDown").style.color = "#555";
+                }
             }
         </script>
     </body>
