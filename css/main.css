@@ -313,6 +313,10 @@ p {
 }
 
 #pageTitle{
+    padding: 10rem 0rem 10rem 0rem;
+}
+
+#subPortfolioText{
     padding: 10rem 0rem 0rem 0rem;
 }
 
