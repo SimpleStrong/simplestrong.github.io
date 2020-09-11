@@ -10,11 +10,11 @@ footer {
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 6.66vw;
     font-variant-caps: all-small-caps;
     color: #333333;
-    padding: 0 2rem 0 2rem;
-    margin: 2rem;
+    padding: 2rem;
+    margin: 0;
 }
 
 h2 {
@@ -273,7 +273,7 @@ p {
 
 #scrollDown{
     position: absolute;
-    bottom: 1rem;
+    bottom: 4rem;
     width: 100%;
     text-align: center;
     color: #555555;
@@ -318,21 +318,20 @@ p {
 }
 
 .imageTextPair{
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.imageTextPair figure{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-columns: 2;
     grid-gap: 2rem;
     position: relative;
-    padding: 2rem;
-    width: 100vw;
+    margin: 00;
 }
 
 .imageTextPair img{
     width: 100%;
-}
-
-.imageTextPair div{
-    padding: 2rem;
 }
 
 .imageTextPair h3{
