@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>SimpleStrong</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Cat</h1>
+        <div class="imageTextPair">
+            <figure>
+            <img src="cat.jpg">
+            <div>
+                <h3>A useless orange tetrapod.</h3>
+                <p>A breakthrough technology for the next generation of animals, the cat redefines what it means to be useless.</p>
+            </div>
+            </figure>
+        </div>
+        <div id="sticky">
+            <a id="simpleStrong" style="font-size: 2.5rem; cursor:pointer; padding: 0.5rem 1rem 0.5rem 1rem;" id="sidebarOpen" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
+        </div>
+        <div id="sidebar">
+            <a style="font-size: 3rem; color: #FFF; text-align: right; cursor: pointer; padding: 1rem;" onclick="SidebarClose()">&times;</a>
+            <a class="navButton" href="index.html"><div></div><p>HOME</p></a>
+            <a class="navButton" href="portfolio.html"><div></div><p>PORTFOLIO</p></a>
+            <a class="navButton" href="videotest.html"><div></div><p>SHOWREEL</p></a>
+            <a class="navButton" href="about.html"><div></div><p>ABOUT</p></a>
+        </div>
+        <footer>
+            <h6>For when your thingy gets real strong!</h6>
+        </footer>
+        <script>
+            window.onscroll = OnScroll;
+            
+            function SidebarOpen(){
+                document.getElementById("sidebar").style.width = "20em";
+            }
+            
+            function SidebarClose(){
+                document.getElementById("sidebar").style.width = "0";
+            }
+        </script>
+    </body>
+</html>
