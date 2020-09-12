@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" media="screen and (min-width:768px)"href="/css/main.css">
+        <link rel="stylesheet" media="screen and (max-width:600px)"href="/css/smallScreen.css">
+        <link rel="stylesheet" media="screen and (min-width:600px) and (max-width:768px)" href="/css/tabletScreen.css">
     <title>SimpleStrong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -12,7 +14,7 @@
     <div class="content">
         <h3 style="position:absolute; top:2em;">Nice Video m8</h3>
         <div id="sticky">
-            <a id="simpleStrong" style="font-size: 2.5rem; cursor:pointer; padding: 0.5rem 1rem 0.5rem 1rem;" id="sidebarOpen" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
+            <a id="simpleStrong" onclick="SidebarOpen()">&#9776; SIMPLESTRONG</a>
         </div>
         <div id="sidebar">
             <a style="font-size: 3rem; color: #FFFFFF; text-align: right; cursor: pointer; padding: 1rem;" onclick="SidebarClose()">&times;</a>
@@ -24,7 +26,12 @@
     </div>
     <script>
             function SidebarOpen(){
-                document.getElementById("sidebar").style.width = "20em";
+                if (innerWidth > 600){
+                    document.getElementById("sidebar").style.width = "15em";
+                }
+                else{
+                    document.getElementById("sidebar").style.width = innerWidth.toString() + "px";
+                }
             }
             
             function SidebarClose(){
