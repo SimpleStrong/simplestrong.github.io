@@ -10,10 +10,8 @@ footer {
 }
 
 h1 {
-    font-size: 6.66vw;
+    font-size: 8rem;
     color: #333333;
-    padding: 2rem;
-    margin: 0;
 }
 
 h2 {
@@ -33,7 +31,6 @@ h3 {
 h4 {
     font-size: 2em;
     color: #333333;
-    text-align: center;
     margin: 0;
 }
 
@@ -83,7 +80,7 @@ p {
 }
 
 .imageContainer{
-    height: 500px;
+    height: 25vw;
     overflow: hidden;
     justify-content: center;
     position: relative;
@@ -115,7 +112,7 @@ p {
 
 .imageZoom{
     width:100%;
-    height: 500px;
+    height: 25vw;
     object-fit: cover;
     display: block;
     margin-left: auto;
@@ -130,7 +127,7 @@ p {
 
 .image{
     width:100%;
-    height: 500px;
+    height: 25vw;
     object-fit: cover;
     display: block;
     margin-left: auto;
@@ -177,6 +174,7 @@ p {
     vertical-align: middle;
     text-align: center;
     width:100%;
+    padding: 0;
 }
 
 #showreelOverlay{
@@ -213,6 +211,9 @@ p {
     transition: 0.2s;
     z-index: 1;
     position: relative;
+    font-size: 2.5rem;
+    cursor:pointer;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 #sticky{
@@ -316,8 +317,9 @@ p {
     padding: 10rem 0rem 10rem 0rem;
 }
 
-#subPortfolioText{
-    padding: 10rem 2rem 0rem 2rem;
+#subPortfolioTitle{
+    padding: 4rem 0rem 0rem 2rem;
+    margin: 0rem;
 }
 
 .imageTextPair{
@@ -335,10 +337,4 @@ p {
 
 .imageTextPair img{
     width: 100%;
-}
-
-.imageTextPair h3{
-}
-
-.imageTextPair p{
 }
